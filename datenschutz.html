@@ -3,167 +3,153 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex">
-  <title>All under - Datenschutzentwurf</title>
+  <title>All under - Datenschutzerklärung</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>All under: Datenschutz</h1>
+    <h1>All under</h1>
     <nav aria-label="Informationen">
       <a href="index.html">Support</a>
       <a href="datenschutz.html" aria-current="page">Datenschutz</a>
       <a href="nutzungsbedingungen.html">Nutzungsbedingungen</a>
-      <a href="konto-loeschen.html">Konto l&ouml;schen</a>
+      <a href="konto-loeschen.html">Konto löschen</a>
     </nav>
   </header>
   <main>
-    <p class="draft"><strong>Unvollst&auml;ndiger Entwurf, keine fertige Datenschutzerkl&auml;rung.</strong>
-      Die Angaben beschreiben den technischen Projektstand. Rechtsgrundlagen,
-      Dienstleister und Aufbewahrungsfristen
-      m&uuml;ssen vor der Ver&ouml;ffentlichung gepr&uuml;ft und erg&auml;nzt werden.</p>
     <h2>1. Verantwortlicher</h2>
     <address>
       Dominik Eschenberg<br>
-      Myliusstra&szlig;e 8<br>
+      Myliusstraße 8<br>
       51371 Leverkusen<br>
-      Deutschland (Nordrhein-Westfalen)<br>
+      Deutschland<br>
       Support und Datenschutz:
       <a href="mailto:domatwork1337@gmail.com">domatwork1337@gmail.com</a>
     </address>
+
     <h2>2. Konto und gemeinsame Haushaltsfunktionen</h2>
-    <p>All under verarbeitet zur Anmeldung eine E-Mail-Adresse und ein Passwort
-      &uuml;ber Supabase Auth. Au&szlig;erdem werden Profilname, gegebenenfalls
-      Profilbild, Haushaltsmitgliedschaften, ausgew&auml;hlte Farben und
-      Haushaltsrollen gespeichert.</p>
-    <p>Bei der Registrierung wird die Best&auml;tigung gespeichert, mindestens
-      18 Jahre alt zu sein, zusammen mit der Version dieser Altersregel.
-      Dies ist eine Selbstauskunft, keine Pr&uuml;fung eines Ausweises oder
-      Speicherung des Geburtsdatums.</p>
-    <p>Abh&auml;ngig von deiner Nutzung werden Termine, Aufgaben, Zimmer,
-      Rezepte und Fotos, Essenspl&auml;ne, Einkaufslisten, Vertrags-/Fixkostenangaben,
+    <p>Zur Anmeldung verarbeitet All under deine E-Mail-Adresse und ein Passwort.
+      Das Passwort wird nur als Hash gespeichert. Außerdem werden Profilname,
+      gegebenenfalls Profilbild, Haushaltsmitgliedschaften, Rollen und
+      ausgewählte Farben gespeichert.</p>
+    <p>Bei der Registrierung speichern wir deine Bestätigung, mindestens
+      18 Jahre alt zu sein. Ein Geburtsdatum oder Ausweis wird nicht verarbeitet.
+      Zur Bestätigung deiner E-Mail-Adresse und zum Zurücksetzen des Passworts
+      senden wir dir E-Mails mit einem Code oder Link.</p>
+    <p>Je nach Nutzung werden Termine, Aufgaben, Zimmer, Rezepte und Fotos,
+      Essenspläne, Einkaufslisten, Fixkosten- und Vertragsangaben,
       Reiseplanungen und Notizen gespeichert. Mitglieder eines Haushalts
-      k&ouml;nnen die daf&uuml;r vorgesehenen gemeinsamen Inhalte sehen.</p>
-    <p>Rezept-, Zimmer- und Profilbilder liegen derzeit in &ouml;ffentlichen
-      Storage-Buckets. Wer die konkrete Bild-URL kennt, kann diese Bilder
-      ohne Anmeldung abrufen. Feedback-Screenshots liegen in einem privaten Bucket.</p>
-    <h2>3. Feedback und Berechtigungen</h2>
-    <p>Bei einer Feedbackmeldung werden Meldungstext, Titel, App-Version,
-      Plattform, Konto-/Haushaltszuordnung und freiwillige Screenshots verarbeitet.
-      Berechtigte Administratoren k&ouml;nnen Meldungen einsehen.</p>
-    <p>Fotos werden nur nach deiner Auswahl hochgeladen. Benachrichtigungen und
-      Erinnerungen verwenden die daf&uuml;r erforderlichen Ger&auml;teberechtigungen.</p>
-    <h2>4. Ger&auml;teeinstellungen und Wetter</h2>
-    <p>Anzeigeoptionen und die Anmeldung werden lokal auf dem Ger&auml;t gespeichert.
-      Die Wetterfunktion ruft <code>api.open-meteo.com</code> direkt vom Ger&auml;t ab.
-      Dabei werden die eingestellten Breiten-/L&auml;ngengrade und
-      technische Verbindungsdaten wie die IP-Adresse an den Wetterdienst &uuml;bermittelt.
-      Der im Projekt gepr&uuml;fte Aufruf &uuml;bermittelt keine Konto-E-Mail oder
-      Termintitel an diesen Wetter-Endpunkt. Die eingestellten Ortskoordinaten
-      werden lokal gespeichert; die Vorhersage wird im Arbeitsspeicher
-      zwischengespeichert und bei Bedarf nach 30 Minuten aktualisiert.</p>
-    <h2>5. Dienstleister und technische Daten</h2>
-    <p>Supabase dient der Anmeldung, Datenbank und Dateispeicherung.
-      Expo/EAS wird f&uuml;r die App-Bereitstellung und Updates verwendet.
-      Beim Abruf dieser Informationsseiten ist GitHub Pages der Hostinganbieter.
-      Netzwerkdienste k&ouml;nnen technische Verbindungsdaten wie IP-Adressen verarbeiten.</p>
-    <p>Die vom Betreiber angegebene Supabase-Projektregion ist
-      <code>eu-west-1</code> (Irland). Aktuell wird der Free-Tarif verwendet.
-      Die Projektregion allein sagt nicht aus, dass s&auml;mtliche Verarbeitungen
-      aller beteiligten Dienstleister ausschlie&szlig;lich in der EU erfolgen.</p>
-    <p class="placeholder">NOCH PR&Uuml;FEN: konkrete Anbieter und Unterauftragnehmer,
-      Drittlandtransfers und Garantien,
-      Auftragsverarbeitungsvertr&auml;ge sowie weitere eingesetzte APIs.</p>
+      können die gemeinsamen Inhalte sehen und bearbeiten.</p>
+    <p>Rezept-, Zimmer- und Profilbilder werden unter schwer zu erratenden
+      Adressen gespeichert. Wer eine konkrete Bildadresse kennt, kann das Bild
+      ohne Anmeldung abrufen. Lade deshalb keine vertraulichen Bilder als
+      Rezept-, Zimmer- oder Profilbild hoch.</p>
+    <p>Zu Verträgen können Anbieter, Kunden- und Vertragsnummer,
+      Kontaktangaben und PDF-Dokumente gespeichert werden. Vertrags-PDFs sind
+      privat gespeichert und nur für Mitglieder des Haushalts über kurzzeitig
+      gültige Links abrufbar.</p>
+    <h3>Optionale Zwei-Faktor-Anmeldung</h3>
+    <p>Sofern in deiner App-Version verfügbar, kannst du einen zusätzlichen
+      Anmeldefaktor über eine Authenticator-App einrichten. Dabei werden die
+      Faktorinformationen sowie Prüfwerte (Hashes) von Wiederherstellungscodes
+      und Angaben zur Begrenzung von Anmeldeversuchen gespeichert.</p>
+
+    <h2>3. Feedback, Fotos und Benachrichtigungen</h2>
+    <p>Wenn du Feedback sendest, verarbeiten wir Titel, Text, App-Version,
+      Plattform, Konto- und Haushaltszuordnung sowie freiwillig angehängte
+      Screenshots, um die Meldung zu bearbeiten.</p>
+    <p>Fotos werden nur nach deiner Auswahl hochgeladen. Erinnerungen an
+      Termine, Aufgaben und Verträge werden lokal auf deinem Gerät geplant;
+      dafür fragt die App nach der Berechtigung für Benachrichtigungen.
+      Es werden keine Push-Tokens an uns übermittelt.</p>
+
+    <h2>4. Wetter und Rezeptimporte</h2>
+    <p>Für die Wetteranzeige ruft die App Daten direkt bei Open-Meteo
+      (<code>api.open-meteo.com</code>) ab. Dabei werden die in der App
+      eingestellten Ortskoordinaten und technische Verbindungsdaten wie die
+      IP-Adresse übermittelt, aber keine Konto- oder Haushaltsdaten.
+      Es findet keine Ortung über das GPS deines Geräts statt.</p>
+    <p>Wenn du ein Rezept aus einem Link importierst, ruft unser Server die
+      angegebene Seite ab. Der Seitenbetreiber erhält dabei die Adresse und
+      technische Verbindungsdaten unseres Servers, nicht deine Daten.
+      Bei YouTube-Links werden über die YouTube Data API (Google) öffentliche
+      Videoinformationen abgefragt.</p>
+
+    <h2>5. Dienstleister</h2>
+    <ul>
+      <li><strong>Supabase</strong> (Supabase Inc.): Anmeldung, Datenbank,
+        Dateispeicher und Serverfunktionen. Projektregion: EU (Irland).
+        Mit Supabase besteht ein Auftragsverarbeitungsvertrag.</li>
+      <li><strong>Brevo</strong> (Sendinblue SAS, Frankreich):
+        Versand der Bestätigungs- und Passwort-E-Mails.</li>
+      <li><strong>Expo / EAS</strong> (650 Industries Inc., USA):
+        Bereitstellung von App-Updates. Beim Prüfen auf Updates werden
+        technische Verbindungsdaten wie die IP-Adresse verarbeitet.</li>
+      <li><strong>Apple und Google</strong>: Vertrieb der App über App Store
+        und Google Play nach deren eigenen Datenschutzbestimmungen.</li>
+      <li><strong>Open-Meteo</strong>: Wetterdaten (siehe Abschnitt 4).</li>
+      <li><strong>Google</strong>: YouTube Data API für Rezeptimporte sowie
+        Gmail für den E-Mail-Support.</li>
+      <li><strong>GitHub Pages</strong> (GitHub Inc., USA): Hosting dieser
+        Informationsseiten. Dabei werden Verbindungsdaten wie die IP-Adresse
+        verarbeitet.</li>
+    </ul>
+    <p>Soweit Daten in Länder außerhalb der EU, insbesondere in die USA,
+      übermittelt werden, erfolgt dies auf Grundlage eines
+      Angemessenheitsbeschlusses (EU-US Data Privacy Framework), sofern der
+      Anbieter zertifiziert ist, oder auf Grundlage von
+      EU-Standardvertragsklauseln.</p>
+
     <h2>6. Zwecke und Rechtsgrundlagen</h2>
-    <p>Konten, Haushaltszuordnungen und eingegebene Inhalte dienen der
-      Bereitstellung der angeforderten gemeinsamen Organisationsfunktionen.
-      Supportangaben dienen der Bearbeitung von Anfragen; technische
-      Verbindungsdaten dem Betrieb und der Sicherheit der Dienste.</p>
-    <p class="placeholder">Rechtlich zu pr&uuml;fende Zuordnung:
-      Art. 6 Abs. 1 lit. b DSGVO f&uuml;r die erforderliche Vertragserf&uuml;llung,
-      lit. f f&uuml;r erforderliche Sicherheits-/Betriebsinteressen und
-      gegebenenfalls lit. c f&uuml;r gesetzliche Pflichten.
-      F&uuml;r optionale, einwilligungsbed&uuml;rftige Verarbeitungen sind
-      Art. 6 Abs. 1 lit. a DSGVO und gegebenenfalls &sect; 25 TDDDG zu
-      ber&uuml;cksichtigen. Eine Ger&auml;teberechtigung ersetzt nicht automatisch
-      jede erforderliche datenschutzrechtliche Einwilligung. Besonders sensible
-      Angaben in Freitexten, etwa Gesundheitsdaten, erfordern eine gesonderte
-      Bewertung.</p>
-    <h2>7. Mindestalter, Werbefreiheit und vorbereitete Abos</h2>
-    <p class="draft">Die Abofunktionen sind technisch vorbereitet und werden
-      in einer separaten Testumgebung eingerichtet. Dieser Abschnitt ist keine Beschreibung
-      bereits aktiver Zahlungen oder automatischer L&ouml;schungen.
-      Es ist keine Werbung vorgesehen; ein Werbe-SDK wird nicht eingebunden.</p>
-    <p>Nutzung und Aboabschluss sind ab 18 Jahren vorgesehen. Die App fragt
-      die Best&auml;tigung bei Registrierung und vor dem Kauf ab.
-      Diese Vorgabe ist von der Altersfreigabe der Stores zu unterscheiden.
-      Die neue Registrierungsversion muss vor Freigabe verteilt werden;
-      bestehende Konten werden dadurch nicht nachtr&auml;glich altersverifiziert.</p>
-    <p>Geplant sind sieben werbefreie Testtage und danach ein gesperrter
-      Zugang, sofern kein Abo ausdr&uuml;cklich gekauft wurde. Aus dem Test
-      entsteht keine automatische Abbuchung. Vorgesehen ist ein Abo pro
-      Haushalt, das ein Mitglied f&uuml;r alle bezahlt:
-      6,99 EUR monatlich oder 54,99 EUR j&auml;hrlich.</p>
-    <p>Die sieben Testtage beginnen mit der Erstellung des Haushalts,
-      nicht mit einer Einladung. Bestehende Haushalte erhalten bei der
-      erstmaligen Aktivierung einmalig sieben neue Testtage.
-      Haushalte ohne jemals best&auml;tigten Kauf sollen fr&uuml;hestens
-      30 Tage nach Testbeginn samt gemeinsamen Inhalten und Haushaltsbildern
-      gel&ouml;scht werden, auch bei mehreren Mitgliedern.
-      Die Benutzerkonten und andere Haushalte bleiben erhalten.
-      Zuvor bezahlte Haushalte werden nach Aboende gesperrt und sind
-      fr&uuml;hestens 180 Tage nach Ende des bezahlten Zugangs einschlie&szlig;lich
-      Zahlungskulanz zur L&ouml;schung vorgesehen. Die Frist beginnt nicht
-      bereits mit der K&uuml;ndigung. Eine erneute best&auml;tigte Zahlung vor Beginn
-      der L&ouml;schung verhindert sie. Die Regel betrifft gemeinsame Inhalte
-      und Haushaltsbilder, nicht Benutzerkonten oder andere Haushalte.
-      Diese Fristen sind noch nicht im Live-Betrieb aktiviert.</p>
-    <p>F&uuml;r die geplante Aboverwaltung ist RevenueCat vorgesehen.
-      Verarbeitet werden sollen die pseudonyme Haushalts-ID als
-      App-User-ID, Store-Transaktionsdaten, Produkt, Abo- und Kaufstatus
-      sowie technisch erforderliche SDK-Daten. E-Mail und Haushaltsinhalte
-      werden nicht ausdr&uuml;cklich als Kundenattribute &uuml;bermittelt.
-      Nach ausdr&uuml;cklichem Kauf verl&auml;ngert sich das Abo automatisch
-      bis zur K&uuml;ndigung im jeweiligen Store.
-      Eine Kontol&ouml;schung k&uuml;ndigt kein Store-Abo.</p>
-    <p class="placeholder">Vor Einf&uuml;hrung pr&uuml;fen:
-      Durchsetzung der Altersregel, Store-Zahlungsabwicklung,
-      RevenueCat-Vertrag, konkrete SDK-Daten, Rechtsgrundlagen,
-      Unterauftragnehmer, Drittlandtransfers und
-      Aufbewahrung von Zahlungsnachweisen. Die Haushaltsinhalte sind von
-      gegebenenfalls gesetzlich aufzubewahrenden Zahlungsnachweisen zu unterscheiden. Jeder Haushalt
-      hat einen unabh&auml;ngigen Abostatus. Danach diesen Entwurfsabschnitt durch
-      eine Beschreibung des tats&auml;chlichen Betriebs ersetzen.</p>
-    <h2>8. Speicherung und L&ouml;schung</h2>
-    <p>Die Kontol&ouml;schung ist in der App sowie &uuml;ber eine
-      <a href="konto-loeschen.html">L&ouml;schanfrage</a> vorgesehen.
-      Gemeinsame Inhalte bleiben f&uuml;r andere Mitglieder erhalten.
-      Beim letzten Mitglied wird der Haushalt gel&ouml;scht.</p>
-    <p>Supabase beschreibt t&auml;gliche Datenbanksicherungen f&uuml;r
-      kostenpflichtige Tarife, bei Pro mit sieben Tagen verf&uuml;gbarer
-      Sicherungen. Daraus folgt keine pauschale Sieben-Tage-L&ouml;schfrist
-      f&uuml;r dieses aktuell im Free-Tarif betriebene Projekt.
-      Eigene Exporte, Providerprotokolle und gegebenenfalls andere
-      Sicherungen m&uuml;ssen separat gepr&uuml;ft werden.</p>
-    <p class="placeholder">NOCH ERG&Auml;NZEN: konkret konfigurierte Speicherfristen,
-      Backup-/Protokollfristen, technische Zwischenspeicher und gegebenenfalls
-      gesetzliche Aufbewahrungspflichten.</p>
+    <ul>
+      <li>Konto, Haushaltsfunktionen, E-Mail-Bestätigung, Rezeptimporte und
+        Wetter: Bereitstellung der von dir genutzten Funktionen
+        (Art. 6 Abs. 1 lit. b DSGVO).</li>
+      <li>Technische Verbindungsdaten, Missbrauchsschutz und Fehlerbehebung:
+        berechtigtes Interesse an einem sicheren und stabilen Betrieb
+        (Art. 6 Abs. 1 lit. f DSGVO).</li>
+      <li>Supportanfragen und Feedback: Bearbeitung deines Anliegens
+        (Art. 6 Abs. 1 lit. b und f DSGVO).</li>
+      <li>Gesetzliche Aufbewahrungspflichten, soweit einschlägig
+        (Art. 6 Abs. 1 lit. c DSGVO).</li>
+    </ul>
+    <p>Bitte trage keine besonders sensiblen Daten wie Gesundheitsdaten in
+      Freitextfelder ein, sofern das nicht nötig ist. Diese sind für alle
+      Mitglieder deines Haushalts sichtbar.</p>
+
+    <h2>7. Keine Werbung, kein Tracking, keine Käufe</h2>
+    <p>All under enthält keine Werbung, keine Tracking- oder Analyse-SDKs und
+      verwendet keine Werbe-ID. Die aktuelle Version enthält keine In-App-Käufe.
+      Sollte künftig ein Abo eingeführt werden, ergänzen wir diese Erklärung
+      vorher um die dafür nötigen Angaben.</p>
+
+    <h2>8. Speicherdauer und Löschung</h2>
+    <p>Konto- und Haushaltsdaten speichern wir, bis du sie löschst oder dein
+      Konto löschst. Die Kontolöschung ist in der App und per
+      <a href="konto-loeschen.html">Löschanfrage</a> möglich. Gemeinsame
+      Inhalte bleiben für andere Mitglieder erhalten; beim letzten Mitglied
+      wird der ganze Haushalt gelöscht.</p>
+    <p>Wir legen keine eigenen Datenbanksicherungen an. Technische Protokolle
+      bei Supabase werden nach dessen Vorgaben automatisch nach kurzer Zeit
+      gelöscht. E-Mails zu abgeschlossenen Supportanfragen löschen wir
+      spätestens drei Monate nach Abschluss, soweit keine gesetzliche
+      Aufbewahrungspflicht besteht.</p>
+
     <h2>9. Deine Rechte</h2>
-    <p>Nach den jeweils anwendbaren Voraussetzungen bestehen insbesondere Rechte
-      auf Auskunft, Berichtigung, L&ouml;schung, Einschr&auml;nkung,
-      Daten&uuml;bertragbarkeit, Widerspruch und Widerruf einer Einwilligung
-      sowie Beschwerde bei einer Datenschutzaufsichtsbeh&ouml;rde.</p>
-    <p>Anfragen zu deinen Daten kannst du an
+    <p>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung
+      der Verarbeitung, Datenübertragbarkeit und Widerspruch gegen
+      Verarbeitungen auf Grundlage berechtigter Interessen.
+      Anfragen kannst du an
       <a href="mailto:domatwork1337@gmail.com">domatwork1337@gmail.com</a> richten.
-      Zur Bearbeitung kann eine angemessene Identit&auml;tspr&uuml;fung erforderlich sein.
-      Sende niemals dein Passwort.</p>
-    <p>F&uuml;r den angegebenen Sitz in Nordrhein-Westfalen ist grunds&auml;tzlich
-      die Landesbeauftragte f&uuml;r Datenschutz und Informationsfreiheit
-      Nordrhein-Westfalen eine zust&auml;ndige Anlaufstelle:
-      <a href="https://www.ldi.nrw.de/">www.ldi.nrw.de</a>.
-      Das Recht, sich bei einer anderen nach Art. 77 DSGVO zust&auml;ndigen
-      Aufsichtsbeh&ouml;rde zu beschweren, bleibt unber&uuml;hrt.</p>
-    <p>Stand dieses Entwurfs: 23. Oktober 2026.</p>
+      Zur Bearbeitung kann eine angemessene Identitätsprüfung erforderlich sein.
+      Sende niemals dein Passwort oder Anmeldecodes.</p>
+    <p>Wir beantworten Anfragen unverzüglich, spätestens innerhalb eines Monats.
+      Du kannst dich außerdem bei einer Datenschutzaufsichtsbehörde beschweren,
+      zum Beispiel bei der Landesbeauftragten für Datenschutz und
+      Informationsfreiheit Nordrhein-Westfalen
+      (<a href="https://www.ldi.nrw.de/">www.ldi.nrw.de</a>).</p>
+
+    <p>Stand: 6. November 2026</p>
   </main>
 </body>
 </html>
