@@ -64,7 +64,7 @@
       dafür fragt die App nach der Berechtigung für Benachrichtigungen.
       Es werden keine Push-Tokens an uns übermittelt.</p>
 
-    <h2>4. Wetter und Rezeptimporte</h2>
+    <h2>4. Wetter, Rezeptimporte und Bon-Scan</h2>
     <p>Für die Wetteranzeige ruft die App Daten direkt bei Open-Meteo
       (<code>api.open-meteo.com</code>) ab. Dabei werden die in der App
       eingestellten Ortskoordinaten und technische Verbindungsdaten wie die
@@ -75,6 +75,14 @@
       technische Verbindungsdaten unseres Servers, nicht deine Daten.
       Bei YouTube-Links werden über die YouTube Data API (Google) öffentliche
       Videoinformationen abgefragt.</p>
+    <p>Wenn du im Haushaltsbuch einen Kassenbon fotografierst oder ein Foto
+      auswählst, sendet unser Server das Bild zur Texterkennung an die
+      Gemini API (Google). Zurück kommen nur erkannte Artikel, Preise
+      und Datum, die du vor dem Speichern prüfen kannst. Das Foto
+      wird von uns weder in der Datenbank noch im Dateispeicher abgelegt.
+      Fotografiere möglichst nur die gekauften Artikel und keine
+      Zahlungsdaten. Für den Scan fragt die App nach der Kamera- bzw.
+      Fotoberechtigung.</p>
 
     <h2>5. Dienstleister</h2>
     <ul>
@@ -89,7 +97,9 @@
       <li><strong>Apple und Google</strong>: Vertrieb der App über App Store
         und Google Play nach deren eigenen Datenschutzbestimmungen.</li>
       <li><strong>Open-Meteo</strong>: Wetterdaten (siehe Abschnitt 4).</li>
-      <li><strong>Google</strong>: YouTube Data API für Rezeptimporte sowie
+      <li><strong>Google</strong>: YouTube Data API für Rezeptimporte,
+        Gemini API (kostenpflichtiger Dienst, Google verwendet die Inhalte
+        nicht zum Training seiner Modelle) zum Auslesen von Kassenbons sowie
         Gmail für den E-Mail-Support.</li>
       <li><strong>GitHub Pages</strong> (GitHub Inc., USA): Hosting dieser
         Informationsseiten. Dabei werden Verbindungsdaten wie die IP-Adresse
@@ -103,8 +113,8 @@
 
     <h2>6. Zwecke und Rechtsgrundlagen</h2>
     <ul>
-      <li>Konto, Haushaltsfunktionen, E-Mail-Bestätigung, Rezeptimporte und
-        Wetter: Bereitstellung der von dir genutzten Funktionen
+      <li>Konto, Haushaltsfunktionen, E-Mail-Bestätigung, Rezeptimporte,
+        Bon-Scan und Wetter: Bereitstellung der von dir genutzten Funktionen
         (Art. 6 Abs. 1 lit. b DSGVO).</li>
       <li>Technische Verbindungsdaten, Missbrauchsschutz und Fehlerbehebung:
         berechtigtes Interesse an einem sicheren und stabilen Betrieb
