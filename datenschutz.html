@@ -64,7 +64,7 @@
       dafür fragt die App nach der Berechtigung für Benachrichtigungen.
       Es werden keine Push-Tokens an uns übermittelt.</p>
 
-    <h2>4. Wetter, Rezeptimporte und Bon-Scan</h2>
+    <h2>4. Wetter, Rezeptimporte, Bon-Scan und Vertragsanalyse</h2>
     <p>Für die Wetteranzeige ruft die App Daten direkt bei Open-Meteo
       (<code>api.open-meteo.com</code>) ab. Dabei werden die in der App
       eingestellten Ortskoordinaten und technische Verbindungsdaten wie die
@@ -83,6 +83,23 @@
       Fotografiere möglichst nur die gekauften Artikel und keine
       Zahlungsdaten. Für den Scan fragt die App nach der Kamera- bzw.
       Fotoberechtigung.</p>
+    <p>Ein Rezeptfoto oder Screenshot wird nur nach deiner Auswahl zur
+      Erkennung an Gemini übermittelt und von uns nicht in Datenbank oder
+      Dateispeicher abgelegt. Ein Vertrags-PDF wird weiterhin im privaten
+      Supabase-Dateispeicher aufbewahrt. Erst wenn du die optionale
+      Vertragsanalyse ausdrücklich startest, erhält Gemini eine Kopie des PDFs;
+      dafür ist eine aktuell bestätigte Zwei-Faktor-Anmeldung erforderlich.
+      Erkannte Angaben werden zunächst nur als Vorschau angezeigt und erst
+      nach deiner Bestätigung in die Vertragsfelder übernommen. Google kann
+      übermittelte Inhalte nach den eigenen Gemini-API-Bedingungen zur
+      Verarbeitung und Missbrauchsabwehr vorübergehend speichern. Im
+      kostenpflichtigen Gemini-API-Tarif werden die Inhalte nicht zum
+      Modelltraining verwendet; die Aufbewahrung durch Google richtet sich
+      nach den dort geltenden Bedingungen.</p>
+    <p>Du kannst auch eine neu ausgewählte PDF vor dem Speichern analysieren
+      lassen. Die Analyse legt keine zusätzliche Datei in Supabase ab. Erst
+      wenn du den Vertrag mit dem ausgewählten Anhang ausdrücklich speicherst,
+      wird diese PDF im privaten Vertrags-Dateispeicher abgelegt.</p>
 
     <h2>5. Dienstleister</h2>
     <ul>
@@ -99,8 +116,9 @@
       <li><strong>Open-Meteo</strong>: Wetterdaten (siehe Abschnitt 4).</li>
       <li><strong>Google</strong>: YouTube Data API für Rezeptimporte,
         Gemini API (kostenpflichtiger Dienst, Google verwendet die Inhalte
-        nicht zum Training seiner Modelle) zum Auslesen von Kassenbons sowie
-        Gmail für den E-Mail-Support.</li>
+        nicht zum Training seiner Modelle) zum freiwilligen Auslesen von
+        Rezeptfotos, Kassenbons und Vertrags-PDFs sowie Gmail für den
+        E-Mail-Support.</li>
       <li><strong>GitHub Pages</strong> (GitHub Inc., USA): Hosting dieser
         Informationsseiten. Dabei werden Verbindungsdaten wie die IP-Adresse
         verarbeitet.</li>
@@ -114,7 +132,7 @@
     <h2>6. Zwecke und Rechtsgrundlagen</h2>
     <ul>
       <li>Konto, Haushaltsfunktionen, E-Mail-Bestätigung, Rezeptimporte,
-        Bon-Scan und Wetter: Bereitstellung der von dir genutzten Funktionen
+        Bon-Scan, Vertragsanalyse und Wetter: Bereitstellung der von dir genutzten Funktionen
         (Art. 6 Abs. 1 lit. b DSGVO).</li>
       <li>Technische Verbindungsdaten, Missbrauchsschutz und Fehlerbehebung:
         berechtigtes Interesse an einem sicheren und stabilen Betrieb
